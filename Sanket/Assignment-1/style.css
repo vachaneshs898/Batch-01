@@ -1,0 +1,106 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
+.container{
+    width: 100%;
+    height: 100%;
+    background-color: #FAEBD7;
+}
+.navbar{
+    width: 100%;
+    height: 100px;
+    background-color:#FAEBD7;
+}
+.navbar ul{
+    list-style-type: none;
+}
+.navbar ul li{
+    display: inline;
+}
+.navbar ul li a{
+    text-decoration: none;
+    align-items: center;
+    text-align: center;
+    padding: 10px;
+    float: right;
+    padding-top: 38px;
+}
+ul li a : hover{
+    background-color: #8B008B;
+    transition: 1s;
+    cursor: pointer;
+}
+.navbar input{
+    width: 300px;
+    padding: 10px;
+    background-color: transparent;
+    border-radius: 10px;
+    float: right;
+    margin-top: 30px;
+}
+.btn{
+    padding: 10px;
+    width: 300px;
+    font-size: 15px;
+    border-radius: 15px;
+    background-color: #00FFFF;
+    margin-left: 40%;
+    margin-top: 20px;
+}
+.btn:hover{
+    background-color:#6495ED;
+    cursor: pointer;
+    transition: 1s;
+}
+.menu{
+    position: relative;
+
+}
+.menu h1{
+    padding-left: 30px;
+    padding-top: 140px;
+    margin-bottom: 10px;
+    padding-right: 30px;
+}
+.menu p{
+    margin-top: 5px;
+    padding-left: 30px;    
+}
+.logo{
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    position: absolute;
+    z-index: 1;
+    position: fixed;
+}
+.footer{
+    width: 100%;
+    height: 100px;
+    background-color: #9932CC;
+    display: inline-flex;
+    align-items: center;
+    margin-top: 25px;
+}
+.info{
+    width: 37.5%;
+    height: 80px;
+    border-right: 1px solid #fff;
+    font-size: 40px;
+    text-align: center;
+}
+.info-1{
+    width: 37.5%;
+    height: 80px;
+    border-right: 1px solid #fff;
+    font-size: 40px;
+    text-align: center;
+}
+.info-2{
+    width: 37.5%;
+    height: 80px;
+    font-size: 40px;
+    text-align: center;
+}
+
