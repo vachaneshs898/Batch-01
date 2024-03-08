@@ -76,4 +76,19 @@ a {
     border: none;
     border-radius: 6px;
     font-size: 17px;
+    height: 45px;
+    width: 250px;
+    text-align: center;
+}
+
+
+.newlogin {
+    margin-top: 60px;
+    text-align: center;
+    border-top: none;
+    color: #1c1e21;
+    font-family: SFProText-Regular, Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    font-weight: normal;
+    padding-top: 0;
 }
