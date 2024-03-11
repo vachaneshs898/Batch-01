@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WebPage</title>
+
+    <style>
+        * {
+            padding: 0px;
+            margin: 0px;
+        }
+
+        .container {
+            width: 100%;
+            height: 100%;
+            background-color: #008B8B;
+        }
+
+        .navbar {
+            width: 100%;
+            height: 80px;
+            background-color: #FAEBD7;
+            display: flex;
+            justify-content: center;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo img {
+            width: 100px;
+            height: 80px;
+            object-fit: cover;
+            position: sticky;
+        }
+
+        ul {
+            display: flex;
+        }
+
+        ul li {
+            list-style: none;
+        }
+
+        ul li a {
+            text-decoration: none;
+            margin: 20px;
+            align-items: center;
+        }
+
+        .btn {
+            padding: 10px;
+            border-radius: 5px;
+            background-color: transparent;
+            color: #000;
+            align-items: center;
+            margin-right: 20px;
+            width: 120px;
+            border: 1px solid #DEB887;
+        }
+
+        .navbar .btn:hover {
+            background-color: #00FFFF;
+            color: #fff;
+            cursor: pointer;
+            transition: 1s;
+        }
+
+        .content {
+            display: flex;
+            width: 100%;
+            margin-top: 40px;
+            border: 1px solid #000;
+        }
+
+        .profile {
+            margin: 20px;
+            padding: 25px;
+            margin-right: 20px;
+            width: 60%;
+            border: 1px solid #000;
+        }
+
+        .profile h1 {
+            color: #fff;
+            font-size: 40px;
+            text-decoration: underline;
+            margin-bottom: 20px;
+        }
+
+        span {
+            color: #FF8C00;
+        }
+
+        .profile p {
+            color: #fff;
+            letter-spacing: 1px;
+            font-size: 25px;
+        }
+
+        .registration {
+            background-color: #FFFAF0;
+            margin-right: 20px;
+            width: 40%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            /* justify-content: center;
+            align-items: center;
+            text-align: center; */
+            border-radius: 10px;
+        }
+
+        .form-input h1 {
+            padding: 20px;
+            display: inline-flexbox;
+            text-align: center;
+        }
+
+        input[type="text"],
+        input[type="password"]{
+            width: 90%;
+            height: 30px;
+            margin: 10px;
+            border: none;
+            border-bottom: 1px solid #000;
+            background-color: transparent;
+            padding: 10px;
+            outline: none;
+        }
+        label[for="text"]{
+            padding-left: 10px;
+            display: flex;
+        }
+        label[for="Email"]{
+            padding-left: 10px;
+        }
+        label[for="password"]{
+            padding-left: 10px;
+        }
+        input[type="radio"]{
+            margin-top: 20px;
+            margin-left: 10px;
+        }
+        #Dropdown{
+            width: auto;
+            margin-top: 20px;
+            height: 30px;
+            margin-left: 20px;
+            text-align: center;
+            justify-content: center;
+        }
+        .btn-1{
+            background-color: #FF69B4;
+            color: #fff;
+            display: flex;
+            
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="container">
+        <div class="navbar">
+            <div class="logo">
+                <img src="H:\Projects\Batch-01\Sanket\Practice\logo_sanket.jpeg" alt="">
+            </div>
+            <ul>
+                <li><a href="Home">Home</a></li>
+                <li><a href="Features">Features</a></li>
+                <li><a href="Review">Review</a></li>
+                <li><a href="About Us">About Us</a></li>
+                <li><a href="Contact">Contact</a></li>
+            </ul>
+            <button class="btn">Get Started</button>
+        </div>
+        <div class="content">
+            <div class="profile">
+                <h1>Hello Everyone !!!!</h1>
+                <p>I'm Sanket hanche, from <span>Mechanical Engineering</span> background. <br>
+                    Working as software tester in pharmacetical industries from past 2 years,
+                    apart from software testing i'm having good knowledge about <span>Html(Hypertext Markup
+                        Languange)</span>,
+                    <span>CSS (Cascading style sheet)</span>, <span>Javascript</span>, <span>React Js</span>...
+                </p>
+            </div>
+            <div class="registration">
+                <form action="" method="post">
+                    <div class="form-input">
+                        <h1>Sign Up for Free</h1>
+                        <input type="text">
+                        <label for="text" placeholder="">Full Name</label>
+                        <input type="text">
+                        <label for="Email">Enter your Email id</label>
+                        <input type="password">
+                        <label for="password">Enter your password</label><br>
+                        <input type="radio">
+                        <label for="radio">Remember Me!</label>
+                    </div>
+                    <select name="State" id="Dropdown">
+                        <option value="Maharashatra">Maharashatra</option>
+                        <option value="Gujrat">Gujrat</option>
+                        <option value="Madhya Pradesh">Madhya pradesh</option>
+                        <option value="karanataka">karanataka</option>
+                    </select>
+                    <button class="btn-1">Register</button>
+                </form>
+            </div>
+
+        </div>
+    </div>
+</body>
+
+</html>
