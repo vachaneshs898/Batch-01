@@ -1,28 +1,56 @@
-<html>
-    <head>
-    
-    </head>
-    <body>
-        <!-- Start of header -->
-        <header style="background-color: #43ff2e;height: 100px;border: 1px solid black;width: 50%;">
-            Header
-        </header>
-        <!-- End of header -->
-
-
-        <section>
-            <div style="background-color: red;">
-                    Vachanesh
-                
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/style.css">
+    <title>Document</title>
+    <style>
+        .border-box{
+            background-color: red;
+        }
+    </style>
+</head>
+<body>
+    <div class="main-wrapper">
+        <div class="container">
+            <div class="logo-wrapper">
+                <div class="logo-box">
+                    <img src="https://static.xx.fbcdn.net/rsrc.php/y1/r/4lCu2zih0ca.svg" />
+                </div>
+                <div class="logo-content">
+                    <h2>Facebook helps you connect and share with the people in your life.</h2>
+                </div>
             </div>
-            <div style="background-color: yellow;">
-                
-                    Manoj   
-                
+            <div class="box-wrapper">
+                <div class="border-box" style="background-color: yellow;">
+                    <div class="login-form">
+                        <form>
+                            <div class="form-wrap">
+                                <div class="form-control">
+                                    <input class="input" placeholder="Email address or phone number" type="text" name="email" />
+                                </div>
+                                <div class="form-control">
+                                    <input class="input" placeholder="Password" type="password" name="password" />
+                                </div>
+                                <div class="form-control">
+                                    <button class="btn default-btn full-btn">Log in</button> 
+                                </div>
+                            </div>    
+                        </form>
+                    </div>
+                    <div class="register-section">
+                        <button class="btn success-btn">Create new account</button>
+                        <div class="link">
+                            <a href="#">Forgotten Password?</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="box-footer">
+                    <p><b>Create a Page</b> for a celebrity, brand or business.</p>
+                </div>
             </div>
-            <iframe src="index2.html" ></iframe>
-        </section>
-
-        <footer>Footer</footer>
-    </body>
+        </div>
+    </div>
+</body>
 </html>
