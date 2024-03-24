@@ -101,15 +101,25 @@
 
         .registration {
             background-color: #FFFAF0;
-            margin-right: 20px;
             width: 40%;
+            border-radius: 10px;
+            padding: 2rem;
+        }
+
+        .registration .form-header {
+            width: 100%;
+            text-align: center;
+        }
+
+        .form-input {
             display: flex;
             flex-direction: column;
-            justify-content: center;
-            /* justify-content: center;
+            padding: 12px 0px;
+        }
+        
+        .form-input.inline {
+            flex-direction: row;
             align-items: center;
-            text-align: center; */
-            border-radius: 10px;
         }
 
         .form-input h1 {
@@ -119,43 +129,25 @@
         }
 
         input[type="text"],
-        input[type="password"]{
-            width: 90%;
-            height: 30px;
-            margin: 10px;
+        input[type="password"] {
             border: none;
             border-bottom: 1px solid #000;
             background-color: transparent;
-            padding: 10px;
             outline: none;
         }
-        label[for="text"]{
-            padding-left: 10px;
-            display: flex;
+
+        input[type="radio"] {
         }
-        label[for="Email"]{
-            padding-left: 10px;
-        }
-        label[for="password"]{
-            padding-left: 10px;
-        }
-        input[type="radio"]{
-            margin-top: 20px;
-            margin-left: 10px;
-        }
-        #Dropdown{
-            width: auto;
-            margin-top: 20px;
+
+        #dropdown {
             height: 30px;
-            margin-left: 20px;
-            text-align: center;
-            justify-content: center;
         }
-        .btn-1{
+
+        .btn-1 {
             background-color: #FF69B4;
             color: #fff;
             display: flex;
-            
+
         }
     </style>
 
@@ -187,25 +179,41 @@
                 </p>
             </div>
             <div class="registration">
+                <div class="form-header">
+                    <h1>Sign Up for Free</h1>
+                </div>
                 <form action="" method="post">
                     <div class="form-input">
-                        <h1>Sign Up for Free</h1>
                         <input type="text">
                         <label for="text" placeholder="">Full Name</label>
+
+                    </div>
+                    <div class="form-input">
                         <input type="text">
                         <label for="Email">Enter your Email id</label>
+                    </div>
+                    <div class="form-input">
                         <input type="password">
-                        <label for="password">Enter your password</label><br>
+                        <label for="password">Enter your password</label>
+                    </div>
+                    <div class="form-input">
+                        <select name="state" id="dropdown">
+                            <option value="">-- Select State --</option>
+                            <option value="Maharashatra">Maharashatra</option>
+                            <option value="Gujrat">Gujrat</option>
+                            <option value="Madhya Pradesh">Madhya pradesh</option>
+                            <option value="karanataka">karanataka</option>
+                        </select>
+                        <label for="state">Select State</label>
+                    </div>
+                    
+                    <div class="form-input inline">
                         <input type="radio">
                         <label for="radio">Remember Me!</label>
                     </div>
-                    <select name="State" id="Dropdown">
-                        <option value="Maharashatra">Maharashatra</option>
-                        <option value="Gujrat">Gujrat</option>
-                        <option value="Madhya Pradesh">Madhya pradesh</option>
-                        <option value="karanataka">karanataka</option>
-                    </select>
-                    <button class="btn-1">Register</button>
+                    <div class="form-input">
+                        <button class="btn-1">Register</button>
+                    </div>
                 </form>
             </div>
 
