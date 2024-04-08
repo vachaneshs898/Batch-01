@@ -4,6 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./Portfolio/img-slider.css">
     <title>WebPage</title>
 
     <style>
@@ -15,7 +16,6 @@
         .container {
             width: 100%;
             height: 100%;
-            background-color: #008B8B;
         }
 
         .navbar {
@@ -26,6 +26,7 @@
             justify-content: center;
             justify-content: space-between;
             align-items: center;
+            position: sticky;
         }
 
         .logo img {
@@ -70,8 +71,9 @@
         .content {
             display: flex;
             width: 100%;
-            margin-top: 40px;
+            margin-top: 25%;
             border: 1px solid #000;
+            background-color: #008B8B;
         }
 
         .profile {
@@ -98,65 +100,8 @@
             letter-spacing: 1px;
             font-size: 25px;
         }
-
-        .registration {
-            background-color: #FFFAF0;
-            margin-right: 20px;
-            width: 40%;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            /* justify-content: center;
-            align-items: center;
-            text-align: center; */
-            border-radius: 10px;
-        }
-
-        .form-input h1 {
-            padding: 20px;
-            display: inline-flexbox;
-            text-align: center;
-        }
-
-        input[type="text"],
-        input[type="password"]{
-            width: 90%;
-            height: 30px;
-            margin: 10px;
-            border: none;
-            border-bottom: 1px solid #000;
-            background-color: transparent;
-            padding: 10px;
-            outline: none;
-        }
-        label[for="text"]{
-            padding-left: 10px;
-            display: flex;
-        }
-        label[for="Email"]{
-            padding-left: 10px;
-        }
-        label[for="password"]{
-            padding-left: 10px;
-        }
-        input[type="radio"]{
-            margin-top: 20px;
-            margin-left: 10px;
-        }
-        #Dropdown{
-            width: auto;
-            margin-top: 20px;
-            height: 30px;
-            margin-left: 20px;
-            text-align: center;
-            justify-content: center;
-        }
-        .btn-1{
-            background-color: #FF69B4;
-            color: #fff;
-            display: flex;
-            
-        }
+    
+       
     </style>
 
 </head>
@@ -175,6 +120,10 @@
                 <li><a href="Contact">Contact</a></li>
             </ul>
             <button class="btn">Get Started</button>
+        </div>
+        <div class="img-slider">
+
+
         </div>
         <div class="content">
             <div class="profile">
