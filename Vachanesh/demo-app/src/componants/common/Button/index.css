@@ -1,0 +1,36 @@
+.btn{
+    border: 1px solid #00000000;
+    border-radius: 4px;
+    padding: 10px 16px;
+    color: #ffffff;
+    cursor: pointer;
+}
+
+.btn.default{
+    border: 1px solid #2b60f1;
+    background-color: #2b60f1;
+}
+.btn.default:hover{
+    background-color: #1854f9;
+    border: 1px solid #1854f9;
+}
+
+.btn.primary{
+    background-color: #6bf35c;
+}
+.btn.primary:hover{
+    background-color: #54f442;
+    border: 1px solid #54f442;
+}
+
+.btn.error{
+    background-color: #de5f53;
+}
+.btn.error:hover{
+    background-color: #de3425;
+    border: 1px solid #de3425;
+}
+.btn:disabled{
+    background-color: #554d4d;
+    cursor: none;
+}

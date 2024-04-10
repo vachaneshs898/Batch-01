@@ -1,0 +1,10 @@
+.main-wrapper{
+    border: 1px solid #444;
+    height: 100vh;
+    background-color: #f59e6b;
+    padding: 20px;
+}
+.user-item{
+    border: 1px solid #aba8a8;
+    padding: 10px;
+}
