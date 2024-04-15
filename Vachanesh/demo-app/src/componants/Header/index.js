@@ -1,12 +1,21 @@
-import Button from "../common/Button";
+import Box from "../UI/Box";
+import Button from "../UI/Button";
+import Logo from "../UI/Logo";
+import Nav from "../UI/Nav";
+import Typography from "../UI/Typography";
+import UserImg from "../UI/UserImg";
 import './index.css';
 
 function Header() {
   return (
-    <div className="header">
-      <h1>This is Header</h1>
-      <Button btnType="error" icon="*" disabled>Log in</Button>
-    </div>
+      <Nav>
+        <Logo>App</Logo>
+        <Box className="inline-flex" style={{gap: '10px'}}>
+          <UserImg src={'https://w7.pngwing.com/pngs/439/19/png-transparent-avatar-user-profile-icon-women-wear-frock-face-holidays-women-accessories.png'} size="medium" />
+          <Typography type="title">Current User</Typography>
+        </Box>
+        
+      </Nav>
   );
 }
 

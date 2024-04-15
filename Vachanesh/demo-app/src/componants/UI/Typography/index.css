@@ -1,0 +1,15 @@
+.typography{
+    color: black;
+}
+
+.typography.heading{
+    font-size: 24px;
+}
+
+.typography.title{
+    font-size: 18px;
+}
+
+.typography.subtitle{
+    font-size: 12px;
+}

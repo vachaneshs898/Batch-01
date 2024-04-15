@@ -1,22 +1,33 @@
-// closer
-function math(num) {
-    function getPowerOf(power){
-        return iterateNum(num, power);
+const demoObj = [
+    {
+      name: 'vachanesh',
+      city: 'pune',
+      age: 20
+    },
+    {
+      name: 'Rakesh',
+      city: 'Mumbai',
+      age: 30
+    },
+    {
+      name: 'Suresh',
+      city: 'Nasik',
+      age: 25
     }
-    
-    function iterateNum(num, power){
-        var result = num;
-        for (let index = power; index > 1; index--) {
-            console.log(result, num)
-            result = result * num;
-        }
-        return result;
-    }
+  ]
 
-    return getPowerOf;
-}
+  const numArr = [1,2,3,4,5,6,7,8,9,10]
 
-var newMath = math(2)
+  const dataMap = demoObj.map((item) => {
+    return "<a>"+item.name+"</a>"
+  })
+
+  const dataFilter = demoObj.filter((item) => item.age > 20)
 
 
-console.log(newMath(3))
+  const dataReduce = numArr.reduce((curent, dele) => {
+    return curent+dele
+    // return dele;
+  })
+
+  console.log(dataMap, dataFilter, dataReduce)

@@ -1,0 +1,17 @@
+.image-wrapper{
+    border-radius: 50%;
+    border: 1px solid #dbd4d492;
+}
+
+.image-wrapper.large{
+    width: 70px;
+    height: 70px;
+}
+.image-wrapper.medium{
+    width: 50px;
+    height: 50px;
+}
+.image-wrapper.small{
+    width: 30px;
+    height: 30px;
+}
