@@ -1,0 +1,33 @@
+.input{
+width: 450px;
+border-radius: 20px;
+display: flex;
+flex-direction: column;
+justify-content: flex-end;
+align-items: flex-end;
+background-color: #fff;
+}
+.resultText{
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    width: auto;
+    height: 80px;
+    padding: 20px;
+}
+.resultText h1{
+    color: #000;
+
+}
+.inputText{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    width: auto;
+    height: 50px;
+    padding: 20px;
+}
+.inputText h1{
+    color: #000;
+
+}

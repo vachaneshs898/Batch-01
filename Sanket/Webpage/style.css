@@ -1,0 +1,411 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.content {
+    width: 100%;
+    height: 100%;
+    background: rgb(2, 0, 36);
+    background: linear-gradient(233deg, rgba(2, 0, 36, 1) 0%, rgba(9, 121, 24, 0.2296568285517332) 0%, rgba(0, 255, 107, 1) 100%);
+}
+
+.userinfo {
+    width: 100%;
+    height: 50px;
+    background-color: #000;
+}
+
+.user-wrapper {
+    width: 100%;
+    height: 50px;
+    /* background-color: #fff; */
+    margin: 0px 50px 0px;
+    display: flex;
+    /* align-items: center; */
+    justify-content: space-between;
+}
+
+.user-wrapper1 {
+    width: 400px;
+    height: 50px;
+    /* background-color: #fff; */
+    display: flex;
+    align-items: center;
+}
+
+.userlink1 a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.user-wrapper2 {
+    width: 200px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+}
+
+.userlink2 a {
+    margin: 15px;
+    color: #fff;
+}
+
+.userlink2 i:hover {
+    transform: scale(1.3);
+    transition: 0.5s;
+}
+
+.navbar {
+    width: 100%;
+    height: 80px;
+    background-color: aqua;
+    display: flex;
+    justify-content: center;
+    justify-content: space-between;
+}
+
+.logoinfo {
+    width: 100px;
+    height: 80px;
+    margin-left: 50px;
+}
+
+.logo {
+    width: 100px;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.logo h1:hover {
+    color: rosybrown;
+    transition: 0.5s;
+    transform: scale(1.1);
+
+}
+
+.main-menu {
+    display: flex;
+    align-items: center;
+}
+
+.menu {}
+
+.menu ul {
+    display: flex;
+    gap: 3rem;
+
+}
+
+ul li {
+    list-style: none;
+}
+
+ul li a {
+    text-decoration: none;
+}
+
+ul li a:hover {
+    color: red;
+    transition: 0.5s;
+}
+
+.user {
+    display: flex;
+    align-items: center;
+    float: right;
+    gap: 2rem;
+    margin-right: 50px;
+}
+
+.sign-btn {
+    padding: 10px;
+    width: 80px;
+    border-radius: 15px;
+    font-size: 15px;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    background-color: transparent;
+    box-shadow: 2px 0px 40px -2px rgba(0, 0, 0, 0.39);
+}
+
+.sign-btn:hover {
+    transform: scale(1.2);
+    transition: 0.5s;
+}
+
+.userprofile {
+    background-color: #fff;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+#menu-vi {
+    display: none;
+}
+
+@media (max-width:990px) {
+    .main-menu {
+        width: 100px;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        z-index: 5;
+        right: -30px;
+    }
+
+    .menu ul {
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+        padding: 10px;
+    }
+    .menu ul li a{
+        color: #fff;
+    }
+
+    #menu-vi {
+        display: block;
+    }
+}
+
+.user a {
+    font-size: 15px;
+    text-decoration: none;
+}
+
+.user i:hover {
+    color: red;
+    transform: scale(1.3);
+    transition: 0.5s;
+}
+
+.user i {
+    cursor: pointer;
+}
+
+.userprofile:hover {
+    transition: 1s;
+    transform: scale(1.2);
+}
+
+.slider {
+    width: 100%;
+    height: 480px;
+}
+
+.image {
+    width: 100vw;
+    height: 400px
+}
+
+.image img {
+    width: 75%;
+    height: 400px;
+    object-fit: cover;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 10px;
+    border-radius: 20px;
+    transition: 1s ease-in;
+}
+
+.btn {
+    width: 75%;
+    /* background-color: bisque; */
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 15px;
+}
+
+#setposition {
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+    font-size: 20px;
+    margin: 0 5px 0;
+    /* background-color: aquamarine; */
+}
+
+.prevbtn,
+.nextbtn {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: transparent;
+    border: none;
+}
+
+.prevbtn i,
+.nextbtn i {
+    font-size: 20px;
+    align-items: center;
+}
+
+.prevbtn i:hover,
+.nextbtn i:hover {
+    cursor: pointer;
+    transform: scale(1.4);
+    transition: 0.5s;
+}
+
+.scaleimg {
+    width: 100%;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.scaleimg1 img,
+.scaleimg2 img,
+.scaleimg3 img {
+    width: 65%;
+    height: 220px;
+    object-fit: fill;
+    cursor: pointer;
+    border-radius: 25px;
+    box-shadow: 25px 22px 22px -5px rgba(0, 0, 0, 0.39);
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.scaleimg1,
+.scaleimg2,
+.scaleimg3 {
+    width: 20%;
+    margin: 20px;
+}
+
+.scaleimg1 a,
+.scaleimg2 a,
+.scaleimg3 a {
+    display: flex;
+    justify-content: center;
+    text-decoration: none;
+    font-size: 25px;
+    color: #000;
+    margin-top: 20px;
+}
+
+.scaleimg1 img:hover,
+.scaleimg2 img:hover,
+.scaleimg3 img:hover {
+    transform: translateY(-20px);
+    transition: 1s;
+}
+
+.personalinfo {
+    width: 100%;
+    height: 700px;
+    display: flex;
+    justify-content: center;
+}
+
+.personal-menu {
+    width: 70%;
+    height: 650px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 15px;
+    background-color: #fff;
+    /* display: flex; */
+}
+
+.personalimg img {
+    width: 90%;
+    height: 600px;
+    padding: 10px;
+    margin-left: 20px;
+    margin-right: 20px;
+    border-radius: 30px;
+    box-shadow: 1px 1px 28px 4px rgba(0, 0, 0, 0.72);
+}
+
+.personalcontent {
+    /* background-color: #fff; */
+    width: 80%;
+    height: 600px;
+    margin-right: 20px;
+    border-left: 1px solid #000;
+    z-index: 2;
+    overflow: hidden;
+}
+
+.personaldetails {
+    padding: 25px;
+}
+
+.personaldetails h4 {
+    letter-spacing: 2px;
+    margin-bottom: 20px;
+}
+
+.personaldetails h3 {
+    letter-spacing: 1px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.personaldetails p {
+    letter-spacing: 0.5px;
+    font-size: 20px;
+}
+
+.personaldetails1 {
+    padding: 20px;
+}
+
+.dateofbirth,
+.personal1,
+.personal2,
+.personal3 {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    /* flex-direction: row; */
+}
+
+.dateofbirth i,
+.personal1 i,
+.personal2 i,
+.personal3 i {
+    font-size: 25px;
+    color: #777777;
+    cursor: pointer;
+}
+
+.dateofbirth h1,
+.personal1 h1,
+.personal2 h1,
+.personal3 h1 {
+    font-size: 20px;
+    align-items: center;
+
+}
+.box1{
+    width: 100%;
+    height: 50px;
+    float: left;
+}
+marquee{
+    text-align: center;
+}
+marquee p{
+    font-size: 25px;
+    letter-spacing: 1px;
+    color: #777777;
+}

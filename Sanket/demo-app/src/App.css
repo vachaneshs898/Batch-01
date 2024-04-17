@@ -1,0 +1,13 @@
+.main_content{
+    height: 100vh;
+    width: auto;
+    display: flex;
+    flex-direction: column;
+    background-color: bisque;
+}
+.content{
+    height: 100vh;
+    background-color: aqua;
+    display: flex;
+}
+

@@ -1,0 +1,15 @@
+.menu-list{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.menu-list ul{
+    gap: 1rem;
+}
+.menu-list ul li{
+    list-style: none;
+}
+
+
+
+

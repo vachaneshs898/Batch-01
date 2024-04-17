@@ -1,0 +1,277 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    background: linear-gradient(90deg, rgba(123, 126, 129, 1) 0%, rgba(136, 227, 222, 0.2212534672071954) 0%);
+    width: auto;
+    height: 100%;
+}
+.content{
+    display: flex;
+}
+.navbar{
+    width: 200px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 20px;
+    cursor: pointer;
+}
+
+.left-content{
+    width: 30%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    position: sticky;
+    top: 100px;
+}
+.personnel{ 
+    width: 90%;
+    padding: 20px;
+    border-radius: 20px;
+    top: 100px;
+
+}
+.user_img{
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    display:block;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+.user_img img{
+    width: 200px;
+    height: 200px;  
+    border-radius: 20px;
+}
+.user_name,
+.designee{
+    width: 100%;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.user_name h1,
+.designee h1{
+    font-size: 20px;
+}
+.social-icon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    padding: 15px;
+}
+.social-icon i{ 
+    font-size: 30px;
+    width: 40px;
+    height: 40px;
+    background-color: lightgray;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    border-radius: 10px;
+    color: blue;
+}
+#instagram{
+    color: palevioletred;
+}
+#whatsapp{
+    color: green;
+}
+#linkdin{
+    color: gray;
+}
+.social-icon i:hover{
+    transform: scale(1.1);
+    transition: 0.5s ease-in-out;
+}
+
+.personnel-details{
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.phone,
+.email,
+.location,
+.birthday{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    background-color:lightgray;
+    padding: 10px;
+    margin: 0 5px 0;
+    border-bottom: 1px solid #000;
+}
+.ph-icon i{
+    color: palevioletred;
+}
+.em-icon i{
+    color: green;
+}
+.lo-icon i{
+    color: red;
+}
+.bh-icon i{
+    color: violet;
+}
+.ph-icon,
+.em-icon,
+.lo-icon,
+.bh-icon{
+    width: 45px;
+    height: 45px;
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px;
+} 
+.ph-icon i,
+.em-icon i,
+.lo-icon i,
+.bh-icon i{
+    font-size: 32px;
+}
+.phone h1,
+.email h1,
+.location h1,
+.birthday h1{
+    font-size: 15px;
+}
+.resume{
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+button{
+    width: 200px;
+    height: 40px;
+    font-size: 15px;
+    border-radius: 15px;
+    background-color: pink;
+    color: #fff;
+    font-weight: 400;
+}
+.resume i{
+    font-size: 15px;
+}
+.right-content{
+    width: 70%;
+    height: 100%;
+}
+.navbar1{
+    float: right;
+    margin-right: 20px;
+}
+.navbar1 ul{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+.navbar1 ul li{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    justify-content: center;
+    align-items: center;
+    width: 80px;
+    height: 80px;
+    background-color: aqua;
+    cursor: pointer;
+}
+.navbar1 ul li a{
+    text-decoration: none;
+    font-size: 18px;
+}
+.right-content-text{
+    margin-top: 100px;
+}
+.about-text{
+    margin: 0 20px 0;
+}
+.about-text p{
+    letter-spacing: 1px;
+    margin-bottom: 10px;
+}
+.about-text h1{
+    margin-bottom: 10px;
+}
+
+.what_do{
+    margin: 0 20px 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1.5rem;
+}
+.mysql,
+.webdevelopment,
+.JavaScript,
+.reactjs
+{
+    display: flex;
+    background-color: aqua;
+    border-radius: 20px;
+}
+.mysql-icon,
+.webdevlopment-icon,
+.js-icon,
+.reactjs-icon
+{
+    font-size: 25px;
+    padding: 5px;
+    margin: 5px 0 0 10px;
+}
+.mysql-text,
+.webdevelopment-text,
+.js-text,
+.reactjs-text
+{
+    margin: 5px 10px 10px 10px;
+}
+.client{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; 
+    padding: 30px;  
+}
+.client h1{
+    font-size: 25px;
+}
+.list-client{
+    width: 800px;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    gap: 4rem;
+    overflow-x: scroll;
+    padding: 20px;
+}
+.list-client img{
+    width: 100px;
+    height: 100px;
+cursor: pointer;
+}
+
+
+
+ 
+
+
+

@@ -1,0 +1,52 @@
+.nav-content{
+    height: 100px;
+    background-color: lightpink;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    margin: 0 50px 0;
+}
+.nav-wrapper{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.user-name{
+    width: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.user-name h1{
+    font-size: 25px;
+    
+}
+.user-profile img{
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+}   
+.user-profile{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.user-story{
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+    width: auto;
+}
+.user-story img{
+    width: 80px;
+    height: 80px;
+    border: 2px solid lightseagreen;
+}
+.btn{
+    float: right;
+    width: 200px;
+    height: 30px;
+    background-color: transparent;
+    border-radius: 15px;
+}

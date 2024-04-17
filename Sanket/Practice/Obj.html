@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        #box {
+            width: 100px;
+            height: 100px;
+            background-color: aqua;
+            text-align: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <!-- create button & click event -->
+    <!-- <script>
+        const button = document.createElement('button');
+        button.textContent = 'click Me';
+
+        button.addEventListener('click', ()=>{
+            alert("You clicked me");
+        })
+
+        document.body.appendChild(button);
+    </script> -->
+    <!-- Get current time in time format 
+    
+    Today is: Tuesday
+    current time is: 10 PM : 30: 38 -->
+    <!-- <div id="box"> Hey I m here</div> -->
+
+    <script>
+        // var today = new Date();
+
+        // var day = today.getDay()
+
+        // const arrlist = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
+
+        // const hours = today.getHours();
+        // const minutes = today.getMinutes();
+        // const seconds = today.getSeconds();
+
+        // var meridiem = hours > 12 ? "PM" : "AM" ;
+
+        // console.log(`Today is: ${arrlist[day]}`);   
+        // console.log(`Current Time is: ${hours} ${meridiem} : ${minutes} : ${seconds}`)
+
+
+        // create string using middle three later from string with odd string length
+
+        // // function middlestr(str){
+        //     if(str.length % 2 != 0){
+        //         mid = (str.length + 1) / 2;
+
+        //         return str.slice(mid - 2, mid + 1);
+        //     } 
+        //     else{
+        //         return false;
+        //     }
+        // }
+        // console.log(middlestr("Hello"));
+
+        // display city name string begins with "los" or "new"
+
+        // function cityName(str){
+        //     const frontstr = str.substring(0,3);
+
+        //     if (frontstr === "Los" || frontstr === "new")
+        //         return str;
+        //     else 
+        //         return false;
+        // }
+
+        // console.log(cityName("Los angel"));
+
+        // get filename extension
+        // const str = prompt("Enter the file name with extension")
+
+        // function strmanu(str){
+        //     return str.split('.').pop();
+        // }
+        // console.log(strmanu(str));
+
+        // Write a JavaScript program to check a pair of numbers and 
+        // return true if one of the numbers is 50 or if their sum is 50
+        // const val1 = prompt("Enter the first value");
+        // const val2 = prompt("Enter the Second value");
+        // const val3 = parseInt(val1) + parseInt(val2);
+
+        // function checknum(val1,val2){
+        //     if (val1 == 50 || val2 == 50 || val3 == 50 )
+        //         return true;
+        //     else 
+        //         return false;
+        // }
+        // console.log(checknum(val1, val2));
+
+        // Write a JavaScript program to create another string by adding "Py" 
+        // in front of a given string. If the given string begins with "Py" return the original string
+
+        // const str = prompt("Enter string");
+
+        // function checkstr(str){
+        //     if(str.substring(0,2) === "Py")
+        //         return str;
+        //     else
+        //         return "Py" + str;
+        // }
+        // console.log(checkstr(str));
+
+        // Write a JavaScript program to remove a character at the specified position in a given string and return the modified string
+
+        // function givenstr(str,n){
+        //     return str.substring(0,(str.length-n)) + str.substring((n+1),(str.length));
+        // }
+        // console.log(givenstr(("Sanket"),3));
+
+        // rite a JavaScript program to remove a character at the specified position in a given string and return the modified string
+        // const str = prompt("Enter string");
+
+        // function positionalter(str){
+        //     return str.substring(str.length-1, str.length) + str.substring(1,(str.length-1)) + str.substring(0,1)
+        // }
+
+        // console.log(positionalter(str));
+
+        // Write a JavaScript program to produce a new string that has the first 3 characters in lower 
+        // case from a given string. If the string length is less than 3 convert all the characters to upper case
+
+        // const str = prompt("Enter the string");
+
+        // function lowerstr(str){
+        //     if(str.length <= 3)
+        //         return str.toUpperCase();
+        //     else 
+        //         return str.substring(0,3).toLowerCase();
+        // }
+
+        // console.log(lowerstr(str));
+
+        // Write a JavaScript program that checks two integer values and returns 
+        // true if either one is 15 or if their sum or difference is 15
+        // const a = prompt("Enter the value");
+        // const b = prompt("Enter second value");
+
+        // const x = (a,b) =>{
+        //     if(a==15 || b==15 || (a+b) == 15 || (a-b) == 15)
+        //         return true;
+        //     else
+        //         return false;
+        // }
+        // console.log(x(a,b));
+
+        // Write a JavaScript program to check two given non-negative integers if one (not both) is a multiple of 7 or 11.
+
+        // const a =parseInt(prompt("Enter the number"));
+
+        // const num = (a) =>{
+        //     if(a % 7 ==0 || a % 11==0)
+        //         return true;
+        //     else 
+        //         return false;
+        // }
+        // console.log(num(a));
+
+        // Write a JavaScript program to reverse a given string
+
+        // const reversestr = (str) =>{
+        //     return str.split("").reverse().join("");
+        // }
+        // console.log(reversestr("Sanket"))
+
+        // Write a JavaScript program to capitalize the first letter of each word in a given string.
+
+        // const capitalstr = (str) => {
+        //     return str.charAt(0).toUpperCase() + str.substring(1, str.length);
+        // }
+        // console.log(capitalstr("sanket"));
+
+        // Write a JavaScript program to check whether the characters a and b are separated by exactly 
+        // 3 places anywhere (at least once) in a given string
+
+        // const findstr = (str) =>{
+        //     return /a...b/.test(str) || /b...a/.test(str);
+        // }
+        // console.log(findstr("shdsabnfb"));
+
+        // count the ovwels from string
+
+        // const findstr = (str) =>{
+        //     return str.replace(/^aeiou/g, "").length;
+        // }
+        // console.log(findstr("aei"));
+
+        // creates a button and add a click event listener to log a message when it's clicked
+
+        // const button = document.createElement('button');
+        // button.textContent = 'click me!';
+
+        // button.addEventListener('click', () => {
+        //     console.log('button clicked');
+        // });
+
+        // document.body.appendChild(button);
+
+        // the background color of an element when a mouse enters it.
+
+        // function divpoint(elementId, color){
+        //     const element = document.getElementById(elementId);
+        //     if(element){
+        //         element.addEventListener('mouseenter', () => {
+        //             element.style.backgroundColor = color;
+        //         })
+        //     }
+        // } 
+        // divpoint('box', '#eefff0');
+
+        // function data_type(value){
+        //     var arrlist = [Function, RegExp, Number, String, Boolean, Object], len;
+
+        //     if(typeof value === Object || typeof value === Function){
+        //         for(var x=0, len=arrlist.length ; x<len ; x++){
+        //             if(value instanceof arrlist[x]){
+        //                 return arrlist[x];
+        //             }
+        //         }
+        //     }
+        //     return typeof value;
+        // }
+
+        // console.log(data_type(112));
+        // console.log(data_type("sanket"));
+
+        // // Promise
+
+        // let mypromise = new Promise(function(resolve, reject){
+        //   num = prompt("Enter the value")
+
+        //   if(!Number.isInteger(num)){
+        //     reject("The number you have enetered is not an integer")
+        //   }
+        //   else{
+        //     resolve("The entered number is an integer")
+        //   }
+        // })
+
+        // function expression(num){
+        //     let res = 0;
+        //     function square(num){
+        //         res = num * num;
+        //         return res;
+        //     }
+        //     function cube(num){
+        //         res = num * num * num;
+        //         return res;
+        //     }
+        //     return{
+        //         square,
+        //         cube
+        //     }
+        // } 
+        // const equation = new expression()
+
+        // console.log(equation.square(5))
+        // console.log(equation.cube(5))
+
+        //    var exponent = function recursive(a,n){
+        //         return a * exponent(a,n-1);
+        //     }
+        //     console.log(exponent(4,2))
+
+        // function pattern(){
+        //     for(let i = 0; i<5; i++){
+        //         for(let j=0; j<5; j++){
+        //             console.log("*");
+        //         }  
+        //     }
+        // }
+        // pattern();
+
+        var str = prompt("Enter the string")
+
+        var result = []
+        function to_convert(str) {
+            Upper = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+            lower = "abcdefghijklmnopqrstuvwxyz";
+
+            for (let x = 0; x < str.length; x++) {
+                if (Upper.indexOf(str[x]) !== -1) {
+                    result.push(str[x].toLowerCase())
+                }
+                else if(lower.indexOf(str[x]) !== -1)
+                {
+                    result.push(str[x].toUpperCase())
+                }
+                else
+                {
+                    result.push(str[x])
+                }
+
+            }
+
+        }
+
+        console.log(to_convert(str))
+    </script>
+
+</body>
+
+</html>

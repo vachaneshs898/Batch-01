@@ -1,0 +1,55 @@
+.middle-wrapper{
+    width: 50%;
+    background-color: bisque;
+}
+.top-nav{
+    padding: 15px;
+    background-color: blue;
+    height: 150px;
+    border-radius: 35px;
+    margin: 0 35px 0;
+}
+.user-img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    background-color: lightcoral;
+    height: 100px;
+}
+.user-img img{
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+.user-img input{
+    width: 300px;
+    height: 35px;
+    border-radius: 10px;
+    padding-left: 10px;
+    font-size: 15px;
+}
+.middle-nav{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: aqua;
+    height: 50px;
+}
+.picture,
+.tag-friend,
+.activity{
+    width: 150px;
+    height: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.picture h1,
+.tag-friend h1,
+.activity h1{
+    font-size: 15px;
+}
+
+

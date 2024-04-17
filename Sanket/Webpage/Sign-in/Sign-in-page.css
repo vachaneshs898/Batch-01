@@ -1,0 +1,129 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.formcontent {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    width: 100%;
+    height: 100vh;
+    background: rgb(2, 0, 36);
+    background: radial-gradient(circle, rgba(2, 0, 36, 1) 0%, rgba(17, 9, 121, 0) 0%, rgba(0, 255, 253, 0.5013655120251226) 100%);
+}
+
+form {
+    position: relative;
+    width: 30%;
+    height: auto;
+    background-color: #fff;
+    text-align: center;
+    padding: 10px;
+    border: 1px solid blueviolet;
+    border-radius: 20px;
+    margin: auto;
+    box-shadow: -1px 1px 33px 11px rgba(0, 0, 0, 0.55);
+    background: rgb(238, 174, 202);
+    background: radial-gradient(circle, rgba(238, 174, 202, 1) 30%, rgba(148, 187, 233, 1) 100%);
+}
+form i{
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    cursor: pointer;
+}
+
+form h1 {
+    font-size: 25px;
+    margin-bottom: 10px;
+}
+.remember {
+    display: flex;
+    width: 100%;
+    height: 30px;
+    justify-content: center;
+    align-items: center;
+    outline: none;
+    gap: 1rem;
+}
+form h2 {
+    font-size: 15px;
+    font-weight: normal;
+    padding: 10px;
+}
+form h2 a {
+    text-decoration: none;
+    font-size: 18px;
+}
+.reg-in {
+    width: 30%;
+    padding: 5px;
+    font-size: 18px;
+    border-radius: 15px;
+    outline: none;
+    background-color: transparent;
+    border: 1px solid #000;
+    cursor: pointer;
+}
+
+.reg-in:hover {
+    transform: scale(1.1);
+    background-image: linear-gradient(to left bottom, #051937, #004d7a, #008793, #00bf72, #a8eb12);
+    transition: 1s;
+    color: #fff;
+}
+.input-1,
+.input-2,
+.input-3 {
+    width: 100%;
+    padding: 8px;
+    position: relative;
+}
+
+.input-1 input,
+.input-2 input,
+.input-3 input {
+    width: 100%;
+    height: 40px;
+    border-radius: 15px;
+    padding: 15px;
+    border: 1px solid #000;
+    outline: none;
+}
+
+.input-1 label,
+.input-2 label,
+.input-3 label {
+    /* display: flex; */
+    position: absolute;
+    /* transform: translateY(-30px);
+    padding-left: 15px; */
+    top: 35%;
+    left: 20px;
+    pointer-events: none;
+}
+
+.input-1 input:focus~label,
+.input-1 input:valid~label,
+.input-2 input:focus~label,
+.input-2 input:valid~label {
+    top: -0.5px;
+    background-color: #fff;
+    width: 60px;
+    font-size: 12px;
+    border-radius: 10px;
+    
+}
+
+.input-3 input:focus~label,
+.input-3 input:valid~label {
+    top: -0.5px;
+    background-color: #fff;
+    width: 120px;
+    font-size: 12px;
+    border-radius: 10px;
+}

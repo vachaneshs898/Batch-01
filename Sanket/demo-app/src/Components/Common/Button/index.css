@@ -1,0 +1,8 @@
+button.btn{
+    width: 200px;
+    height: 30px;
+    border-radius: 10px;
+}
+.btn.primary{
+    background-color: blue;
+}

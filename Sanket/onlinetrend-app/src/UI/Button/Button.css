@@ -1,0 +1,9 @@
+.btn{
+    width: 100px;
+    height: 35px;
+    background-color: aqua;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

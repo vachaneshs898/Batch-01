@@ -1,0 +1,24 @@
+.App{
+    background-color: #000;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.cal-wrapper{
+    width: 400px;
+    height: 740px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+.row{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
