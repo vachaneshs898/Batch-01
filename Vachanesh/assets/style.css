@@ -1,0 +1,108 @@
+*{
+    font-family: SFProDisplay-Regular, Helvetica, Arial, sans-serif;
+}
+html {
+    box-sizing: border-box;
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+.box-wrapper .border-box{
+    background-color: #42b72a;
+}
+.main-wrapper{
+    background-color: f0f2f5;
+    height: 100%;
+    width: 100%;
+}
+.container{
+    display: flex;
+    width: 80%;
+    margin: 0px auto;
+    padding: 200px 0px;
+}
+.container .logo-wrapper{
+    width: 60%;
+    overflow: hidden;
+}
+.container .logo-wrapper .logo-box{
+    
+}
+.container .logo-wrapper .logo-content{
+    padding-left: 30px;
+}
+.logo-content h2{
+    margin: 0px;
+    padding: 0px;
+    font-size: 28px;
+    font-weight: normal;
+    line-height: 32px;
+    width: 500px;
+}
+.container .logo-wrapper .logo-box img{
+    height: 106px;
+}
+
+
+.container .box-wrapper{
+    width: 40%;
+}
+.logo-wrapper .box-wrapper{
+    height: 500px;
+    width: 50%;
+}
+.box-wrapper .border-box{
+    background-color: white !important;
+    border-radius: 4px;
+    text-align: center;
+    padding: 20px;
+    -webkit-box-shadow: 1px 2px 17px 3px rgba(0,0,0,0.75);
+    -moz-box-shadow: 1px 2px 17px 3px rgba(0,0,0,0.75);
+    box-shadow: 1px 2px 17px 3px rgba(0,0,0,0.75);
+}
+.box-wrapper .border-box .login-form{
+    padding-bottom: 10px;
+    border-bottom: 1px solid black;
+}
+.input{
+    border: 1px solid #dddfe2;
+    height: 40px;
+    width: 100%;
+    border-radius: 4px;
+    margin-bottom: 10px;
+    padding: 5px 10px;
+    color: #dddfe2;
+}
+.box-wrapper .border-box .register-section{
+    padding-top: 10px;
+}
+.btn{
+    font-size: 16px;
+    color: #ffffff;
+    height: 40px;
+    border: 0px;
+    border-radius: 4px;
+    padding: 0px 20px;
+}
+.full-btn{
+    width: 100%;
+}
+.default-btn{
+    background-color: #0866ff;
+}
+.success-btn{
+    background-color: #42b72a;
+}
+.register-section .link{
+    padding: 10px 0px;
+}
+
+.link a{
+    font-size: 12px;
+}
+.box-footer{
+    text-align: center;
+}
+.box-wrapper .border-box{
+    background-color: blue;
+}
