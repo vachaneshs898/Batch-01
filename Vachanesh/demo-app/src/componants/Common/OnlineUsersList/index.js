@@ -3,6 +3,7 @@ import UserWithImage from "../../UI/UserWithImage";
 import Card from "../../UI/Card";
 import "./index.css";
 import Typography from "../../UI/Typography";
+import Box from "componants/UI/Box";
 
 const onlineUsers = [
   {
