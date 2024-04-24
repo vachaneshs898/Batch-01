@@ -10,16 +10,19 @@ const UIButton = styled.button`
   color: #ffffff;
   cursor: pointer;
 
-  ${({ btntype }) =>
-    btntype &&
-    css`
-      border: 1px solid ${theme["colors"][btntype]};
-      background-color: ${theme["colors"][btntype]};
-      &:hover {
-        background-color: ${theme["colors"]["hover"][btntype]};
-        border: 1px solid ${theme["colors"]["hover"][btntype]};
-      }
-    `}
+  ${({ btntype }) => {
+    return (
+      btntype &&
+      css`
+        border: 1px solid ${theme["colors"][btntype]};
+        background-color: ${theme["colors"][btntype]};
+        &:hover {
+          background-color: ${theme["colors"]["hover"][btntype]};
+          border: 1px solid ${theme["colors"]["hover"][btntype]};
+        }
+      `
+    );
+  }}
 
   ${({ size }) =>
     size &&
