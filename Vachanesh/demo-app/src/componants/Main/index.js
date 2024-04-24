@@ -1,7 +1,6 @@
 import MainSection from '../Common/MainSection';
 import RightSection from '../Common/RightSection';
 import LeftSection from '../Common/leftSection';
-import Button from '../UI/Button';
 import './index.css';
 
 function Main() {

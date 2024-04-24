@@ -13,12 +13,7 @@ function App() {
     <Routes>
       <Route path="/" element={<PrivateRoute />}>
         <Route path="/" element={<Home />} />
-        <Route path="/about" element={<AboutUs />}>
-          <Route path="/about/demo" element={<div>this is me</div>} />
-          <Route path="/about/demo1" element={<div>this is me1</div>} />
-        </Route>
-        <Route path="/users" element={<Users />} />
-        <Route path="/user/:id" element={<UserDetail />} />
+        <Route path="/about" element={<AboutUs />} />
       </Route>
     </Routes>
   );

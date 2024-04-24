@@ -7,13 +7,7 @@ import { Link } from "react-router-dom";
 function AboutUs() {
   return (
     <div>
-      <Header />
-      <h1>This is about us page</h1>
-
-      <Button>
-        <Link to="/">Home</Link>
-      </Button>
-      <Footer />
+      this is about us page
     </div>
   );
 }

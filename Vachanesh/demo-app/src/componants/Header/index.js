@@ -20,7 +20,7 @@ function Header() {
           size="medium"
         />
         <Typography type="title">Current User</Typography>
-        <Button>
+        <Button btnType="warning" size="small">
           <Link to="/about">About Us</Link>
         </Button>
       </Box>
